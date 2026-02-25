@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Donasi</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styling.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+        <div class="top-bar"></div>
+        <nav class="navbar">
+            <div class="logo-box">LOGO</div>
+            <ul class="nav-links">
+                <li><a href="Index.html">Beranda</a></li>
+                <li><a href="TentangKami.html">Tentang Kami</a></li>
+                <li><a href="#">Guru</a></li>
+                <li><a href="Donasi.html">Donasi</a></li>
+                <li><a href="#">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="donation-header" data-aos="fade-down">
+      <h1>Wujudkan Mimpi Anak Bangsa</h1>
+      <p>
+        Dukungan Anda membantu kami mendirikan sarana prasarana terbaik bagi
+        siswa SMP PGRI Jabung.
+      </p>
+    </section>
+
+    <section class="donation-main">
+      <div class="donation-card" data-aos="zoom-in">
+        <h3>Target Pembangunan Ruang Kelas</h3>
+        <div class="progress-container">
+          <div class="progress-bar" style="width: 45%">45%</div>
+        </div>
+        <p class="status-text">
+          Terkumpul: <strong>Rp 45.000.000</strong> / Rp 100.000.000
+        </p>
+
+        <div class="donation-options">
+          <button class="btn-opt">Rp 50.000</button>
+          <button class="btn-opt">Rp 100.000</button>
+          <button class="btn-opt">Rp 500.000</button>
+        </div>
+
+        <div class="transfer-info">
+          <p>Transfer Bank (BRI): <strong>0021-xxxx-xxxx-xxx</strong></p>
+          <p>A.N. Panitia Pembangunan SMP PGRI Jabung</p>
+        </div>
+
+        <button class="btn-yellow full-width">
+          Konfirmasi Donasi (WhatsApp)
+        </button>
+      </div>
+    </section>
+  </body>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script> </body>
+</html>
+<style>
+  /* Donation Options */
+  .donation-options {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin: 30px 0;
+  }
+
+  .btn-opt {
+    border: 1px solid var(--yellow);
+    background: transparent;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .btn-opt:hover {
+    background: var(--yellow);
+    color: white;
+  }
+
+  .donation-card {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: -50px auto 50px;
+    text-align: center;
+  }
+
+  .full-width {
+    width: 100%;
+    margin-top: 20px;
+  }
+</style>
