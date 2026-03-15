@@ -1,9 +1,9 @@
 <!doctype html>
-<html lang="en">
+<html lang="id">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Donasi</title>
+    <title>Donasi - SMP PGRI Malang</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
       rel="stylesheet"
@@ -13,25 +13,22 @@
   </head>
   <body>
     <header>
-        <div class="top-bar"></div>
-        <nav class="navbar">
-            <div class="logo-box">LOGO</div>
-            <ul class="nav-links">
-                <li><a href="Index.html">Beranda</a></li>
-                <li><a href="TentangKami.html">Tentang Kami</a></li>
-                <li><a href="#">Guru</a></li>
-                <li><a href="Donasi.html">Donasi</a></li>
-                <li><a href="#">Kontak</a></li>
-            </ul>
-        </nav>
+      <div class="top-bar"></div>
+      <nav class="navbar">
+        <a href="Index.html" class="logo-box" style="text-decoration: none; color: inherit;">LOGO</a>
+        <ul class="nav-links">
+          <li><a href="Index.html">Beranda</a></li>
+          <li><a href="TentangKami.html">Tentang Kami</a></li>
+          <li><a href="Guru.html">Guru</a></li>
+          <li><a href="Donasi.html" class="active">Donasi</a></li>
+          <li><a href="Kontak.html">Kontak</a></li>
+        </ul>
+      </nav>
     </header>
 
     <section class="donation-header" data-aos="fade-down">
       <h1>Wujudkan Mimpi Anak Bangsa</h1>
-      <p>
-        Dukungan Anda membantu kami mendirikan sarana prasarana terbaik bagi
-        siswa SMP PGRI Jabung.
-      </p>
+      <p>Dukungan Anda membantu kami mendirikan sarana prasarana terbaik.</p>
     </section>
 
     <section class="donation-main">
@@ -60,45 +57,45 @@
         </button>
       </div>
     </section>
+
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <p>Mendidik generasi cerdas dan berkarakter.</p>
+        </div>
+        <div class="footer-links">
+          <div class="link-col">
+            <h4>Menu</h4>
+            <a href="TentangKami.html">Tentang Kami</a
+            ><a href="Guru.html">Guru</a>
+          </div>
+          <div class="link-col">
+            <h4>Kontak</h4>
+            <a href="Kontak.html">Hubungi Kami</a
+            ><a href="Donasi.html">Donasi</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom"><p>Copyright © 2026. SMP PGRI Malang.</p></div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({ duration: 1000, once: true });
+    </script>
+
+    <!-- Animasi Header -->
+    <script>
+      window.addEventListener("scroll", function () {
+        const header = document.querySelector("header");
+        // Jika layar di-scroll lebih dari 50px ke bawah, aktifkan mode 'scrolled'
+        if (window.scrollY > 50) {
+          header.classList.add("scrolled");
+        } else {
+          // Jika kembali ke paling atas, hapus mode 'scrolled'
+          header.classList.remove("scrolled");
+        }
+      });
+    </script>
   </body>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>AOS.init();</script> </body>
 </html>
-<style>
-  /* Donation Options */
-  .donation-options {
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-    margin: 30px 0;
-  }
-
-  .btn-opt {
-    border: 1px solid var(--yellow);
-    background: transparent;
-    padding: 10px 15px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-  }
-
-  .btn-opt:hover {
-    background: var(--yellow);
-    color: white;
-  }
-
-  .donation-card {
-    background: white;
-    padding: 40px;
-    border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    max-width: 600px;
-    margin: -50px auto 50px;
-    text-align: center;
-  }
-
-  .full-width {
-    width: 100%;
-    margin-top: 20px;
-  }
-</style>
